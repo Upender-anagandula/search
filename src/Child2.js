@@ -1,23 +1,10 @@
-import React, { Component } from 'react';
-import {Themecontext} from './App';
+import React from 'react'
 
-export default class Child2 extends Component {
-themestyles(dark){
-    return {
-        backgroundColor:dark ? '#333':'#ccc',
-        color: dark ? '#333':'#ccc',
-        padding:'1rem',
-        margin:'1rem'
-    }
+ function Child2() {
+    return (
+        <div>
+          This Is Child2  
+        </div>
+    )
 }
-    render() {
-        return (
-            <Themecontext.Consumer>
-                {darkTheme =>{
-                    return <div style={this.themestyles(darkTheme)}>Class Component</div>
-                }}
-            </Themecontext.Consumer>
-                    
-        )
-    }
-}
+export default Child2;

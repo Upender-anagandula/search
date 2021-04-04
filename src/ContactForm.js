@@ -13,7 +13,7 @@ const ContactForm=(props)=>{
 const [values, setValues]=useState(initialFieldValues)
  console.log(values);
  const changeHandler = e => {
-    var { name,value }= e.target;
+    let { name,value }= e.target;
 //console.log(e.target);
       setValues({
            ...values,
